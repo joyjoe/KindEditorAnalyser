@@ -1,0 +1,83 @@
+# KNode对象
+针对原生Node对象进行了封装，扩展了preventDefault,stopPropagation,stop等方法(line 1229 ~ 1777)  
+## KNode对象的创建
+使用KindEditor.NodeClass作为构造函数创建,传入JS原生的Node对象或者KNode对象
+## KNode对象的属性
+* index (索引)
+* length
+* name
+* type
+* doc 根节点 ownerDocument||document||node
+* win
+## KNode对象的方法
+* each
+* bind
+* unbind
+* fire
+* hasAttr
+* attr
+* removeAttr
+* get
+* eq
+* hasClass
+* removeClass
+* html
+* text
+* hasVal
+* val
+* css
+* width
+* height
+* opacity
+* data
+* pos
+* clone
+* append
+* appendTo
+* before
+* after
+* replaceWith
+* empty
+* remove
+* show
+* hide
+* outer
+* isSingle
+* isInline
+* isBlock
+* isStyle
+* isControl
+* contains
+* parent
+* children
+* first
+* last
+* index
+* prev
+* next
+* scan
+* Event Method
+  * blur
+  * focus
+  * focusin
+  * load
+  * resize
+  * scroll
+  * unload
+  * click
+  * dbclick
+  * mousedown
+  * mouseup
+  * mousemove
+  * mouseover
+  * mouseout
+  * mouseenter
+  * mouseleave
+  * change
+  * select
+  * submit
+  * keydown
+  * keypress
+  * keyup
+  * error
+  * contextmenu
