@@ -67,4 +67,35 @@ line 5073
 afterSetHtml
 afterCreate
 beforeGetHtml
-beforeSetHtml
+beforeSetHtml  
+
+
+line 4998 `addContextmenu`方法的目的是添加右键菜单项到数组`_contextmenus`中  
+line 5842, line 5870这两部分代码就添加了30个右键菜单项  
+* editLink
+* editImage
+* editFlash
+* editMedia
+* editAnchor
+* deleteLink
+* deleteImage
+* deleteFlash
+* deleteMedia
+* deleteAnchor
+* tableprop
+* tablecellprop
+* tablecolinsertleft
+* tablecolinsertright
+* tablerowinsertabove
+* tablerowinsertbelow
+* tablerowmerge
+* tablecolmerge
+* tablerowsplit
+* tbalecolsplit
+* tablecoldelete
+* tablerowdelete
+* tableinsert
+* tabledelete  
+编辑器在创建时就为文档的鼠标右键绑定了事件`line4652`  
+针对每一个菜单项目，判断是否为分隔符。如果不是分隔符则执行condition条件判断函数，满足添加的菜单项目才会被添加到最终的右键菜单项数组中。  
+`fontsize`菜单项中罗列的字体大小集合是在`options.fontSizeTable`(line 280)配置项中设置的  
